@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Technical Document HTML</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav id="navbar">
+  <header>HTML5 Tutorial</header>
+  <ul>
+    <a class="nav-link" href="#Basic" rel="internal"><li>Basic</li></a>
+    <a class="nav-link" href="#Elements" rel="internal"><li>HTML Elements</li></a>
+    <a class="nav-link" href="#Attributes" rel="internal"><li>HTML Attributes</li></a>
+    <a class="nav-link" href="#Headings" rel="internal"><li>HTML Headings</li></a>
+    <a class="nav-link" href="#Paragraphs" rel="internal"><li>HTML Paragraphs</li></a>
+    <a class="nav-link" href="#Info" rel="internal"><li>Info</li></a>
+  </ul>
+</nav>
+<!--main document body-->
+<main id="main-doc">
+  <section class="main-section" id="Basic">
+    <header>Basic</header>
+      <article>
+        <p>All HTML documents must start with a document type declaration:</p>      
+        <code>&lt;!DOCTYPE html&gt;</code>
+        <p>The HTML document itself begins with<code>&lt;html&gt;</code>and ends with<code>&lt;/html&gt;</code>.</p>
+        <h6>Example</h6>
+        <code class="code">&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br>&lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br>&lt;/code&gt;</code>
+        <h5>HTML Headings</h5>
+        <p>HTML headings are defined with the<code>&lt;h1&gt;</code> to<code>&lt;h6&gt;</code> tags.</p>
+        <p><code>&lt;H1&gt;</code>defines the most important heading. <code>&lt;h6&gt;</code> defines the least important heading: </p>
+        <h6>Example</h6>
+        <code class="code">&lt;h1&gt;This is heading 1&lt;/h1&gt;
+		&lt;h2&gt;This is heading 2&lt/h2&gt;
+		&lt;h3&gt;This is heading 3&lt;/h3&gt;</code>
+        <h5>HTML Paragraphs</h5>
+        <p>HTML paragraphs are defined with the <code>&lt;p&gt;</code> tag:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&lt;p&gt;This is another paragraph.&lt;/p&gt;</code>
+        <h5>HTML Links</h5>
+        <p>HTML links are defined with the <code>&lt;a&gt;</code> tag:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;</code>
+        <p>The link's destination is specified in the href attribute. <br><br>Attributes are used to provide additional information about HTML elements.<br><br>You will learn more about attributes in a later chapter.</p>
+        <h5>HTML Images</h5>
+        <p>HTML images are defined with the <code>&lt;img&gt;</code> tag.</p>
+        <p>The source file (src), alternative text (alt), width, and height are provided as attributes:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;</code>
+        <h5>HTML Buttons</h5>
+        <p>HTML buttons are defined with the <code>&lt;button&gt;</code> tag:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;button&gt;Click me&lt;/button&gt;</code>
+        <h5>HTML Lists</h5>
+        <p>HTML lists are defined with the <code>&lt;ul&gt;</code> (unordered/bullet list) or the <code>&lt;ol&gt;</code> (ordered/numbered list) tag, followed by <code>&lt;li&gt;</code> tags (list items):</p>
+        <h6>Example</h6>
+        <code class="code">&lt;ul&gt;<br>&lt;li&gt;Coffee&lt;/li&gt;<br>&lt;Tea&lt;/br&gt;<br>&lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;</code>
+      </article>
+  </section>
+  <hr>
+  <section class="main-section" id="Elements">
+    <header>Elements</header>
+      <article>
+        <h5></h5>
+        <p>An HTML element usually consists of a start tag and end tag, with the content inserted in between:</p>
+        <code>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code>
+        <p>The HTML element is everything from the start tag to the end tag:</p>
+        <code>&lt;p&gt;My first paragraph.&lt;/p&gt;</code>
+        <h5>Nested HTML Elements</h5>
+        <p>HTML elements can be nested (elements can contain elements).<br><br>All HTML documents consist of nested HTML elements.<br><br>This example contains four HTML elements:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;!DOCTYPE html&gt;<br>&lt;body&gt;<br>&lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;p&gt;</br>&lt;/body&gt;</code>
+    <h6>Example Explained</h6>
+    <p>The <code>&lt;html&gt;</code> element defines the whole document.<br><br>It has a start tag <code>&lt;html&gt;</code and an end tag <code>&lt;/html&gt;<br><br>The element content is another HTML element (the <code>&lt;body&gt;</code> element)</p>
+    <code class="code">&lt;html&gt;<br>&lt;body&gt<br> &lt;h1&gt;MyFirstHeading&lt;/h1&gt; <br>&lt;p&gt;My first paragraph.&lt;/p&gt;</br>&lt;/html&gt;</code>
+  <p>The <code>&lt;body&gt;</code> element defines the document body.<br>It has a start tag <code>&lt;body&gt;</code> and an end tag <code>&lt;/body&gt;</code>.<br>The element content is two other HTML elements (<code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>).</p>
+  <code class="code">&lt;body&gt;<br>&lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br>&lt;/body&gt;</code>
+  <p>The <code>&lt;h1&gt;</code> element defines a heading.<br>It has a start tag <code>&lt;h1&gt;</code> and an end tag <code>&lt;/h1&gt;</code>.<br>The element content is: My First Heading.</p>
+  <code class="code">&lt;h1&gt;My First Heading&lt;/h1&gt;</code>
+  <p>The <code>&lt;p&gt;</code> element defines a paragraph.<br>It has a start tag <code>&lt;p&gt;</code> and an end tag <code>&lt;/p&gt;</code>.<br>The element content is: My first paragraph.</p>
+  <code class="code">&lt;p&gt;My first paragraph.&lt;/p&gt;</code>
+  <h5>Do Not Forget the End Tag</h5>
+  <p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+  <h6>Example<h6>
+  <code class="code">&lt;html&gt;<br>&lt;body&gt;<br>&lt;p&gt;This is a paragraph<br>&lt;p&gt;This is a paragraph<br>&lt;/body&gt;<br>&lt;/html&gt;</code>
+    <p>The example above works in all browsers, because the closing tag is considered optional.<br>Never rely on this. It might produce unexpected results and/or errors if you forget the end tag.</p>
+    <h5>Empty HTML Elements</h5>
+    <p>HTML elements with no content are called empty elements.<br><br> is an empty element without a closing tag (the <code>&lt;br&gt;</code> tag defines a line break).<br><br>Empty elements can be "closed" in the opening tag like this: <code>&lt;br /&gt;</code>.<br><br>HTML5 does not require empty elements to be closed. But if you want stricter validation, or if you need to make your document readable by XML parsers, you must close all HTML elements properly.</p>
+    <h5>Use Lowercase Tags</h5>
+    <p>HTML tags are not case sensitive: <code>&lt;P&gt;</code> means the same as <code>&lt;p&gt;</code>.<br><br>The HTML5 standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.</p>
+      </article>
+  </section>
+  <hr>
+  <section class="main-section" id="Attributes">
+    <header>Attributes</header>
+      <article>
+        <p>Attributes provide additional information about HTML elements.</p>
+        <ul>
+          <li>All HTML elements can have attributes</li>
+          <li>Attributes provide additional information about an element</li>
+          <li>Attributes are always specified in the start tag
+</li>
+          <li>Attributes usually come in name/value pairs like: name="value"</li>
+        </ul>
+        <h5>The href Attribute</h5>
+        <p>HTML links are defined with the <code>&lt;a&gt;</code> tag. The link address is specified in the href attribute:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;</code>
+        <p>You will learn more about links and the &lt;a&gt; tag later in this tutorial.</p>
+        <h5>The src Attribute</h5>
+        <p>HTML images are defined with the <code>&lt;img&gt;</code> tag.<br><br>The filename of the image source is specified in the src attribute:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;img src="img_girl.jpg"&gt;</code>
+        <h5>The width and height Attributes</h5>
+        <p>Images in HTML have a set of size attributes, which specifies the width and height of the image:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;img src="img_girl.jpg" width="500" height="600"&gt;</code>
+        <p>The image size is specified in pixels: width="500" means 500 pixels wide.<br><br>You will learn more about images in our HTML Images chapter.</p>
+        <h5>The alt Attribute</h5>
+        <p>The alt attribute specifies an alternative text to be used, when an image cannot be displayed.<br><br>The value of the attribute can be read by screen readers. This way, someone "listening" to the webpage, e.g. a vision impaired person, can "hear" the element.</p>
+        <h6>Example</h6>
+        <code class="code">&lt;img src="img_girl.jpg" alt="Girl with a jacket"&gt;</code>
+        <p>The alt attribute is also useful if the image does not exist</p>
+        <h5>The style Attribute</h5>
+        <p>The style attribute is used to specify the styling of an element, like color, font, size etc.</p>
+        <h6>Example</h6>
+        <code class="code">&lt;p&gt; style="color:red">I am a paragraph&lt;/p&gt;</code>
+        <h5>The lang Attribute</h6>
+        <p>The language of the document can be declared in the <code>&lt;html&gt;</code> tag.<br><br>The language is declared with the lang attribute.<br><br>Declaring a language is important for accessibility applications (screen readers) and search engines:</p>
+        <code class="code">&lt;!DOCTYPE html&gt;<br>&lt;html lang="en-US"&gt;<br>&lt;body&gt;<br><br>...<br><br>&lt;/body&gt;<br>
+&lt;/html&gt;</code>
+        <p>The first two letters specify the language (en). If there is a dialect, use two more letters (US).</p>
+        <h5>The title Attribute</h5>
+        <p>Here, a title attribute is added to the <code>&lt;p&gt;</code> element. The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;</code>
+        <h5>We Suggest: Use Lowercase Attributes</h5>
+        <p>The HTML5 standard does not require lowercase attribute names.<br><br>The title attribute can be written with uppercase or lowercase like title or TITLE.<br><br>W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.</p>
+        <h5>We Suggest: Quote Attribute Values</h5>
+        <p>The HTML5 standard does not require quotes around attribute values.<br><br>The href attribute, demonstrated above, can be written without quotes:</p>
+        <h6>Bad</h6>
+        <code class="code">&lt;a href=https://www.w3schools.com&gt;</code>
+        <h6>Good</h6>
+        <code class="code">&lt;a href="https://www.w3schools.com"&gt;</code>
+        <p>W3C recommends quotes in HTML, and demands quotes for stricter document types like XHTML.<br><br>Sometimes it is necessary to use quotes. This example will not display the title attribute correctly, because it contains a space:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;p title=About W3Schools&gt;</code>
+        <p>Using quotes are the most common. Omitting quotes can produce errors.<br>At W3Schools we always use quotes around attribute values.</p>
+        <h5>Single or Double Quotes?</h5>
+        <p>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.<br><br>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+        <code class="code">&lt;p title='John "ShotGun" Nelson'&gt;</code>
+        <p>Or vice versa:</p>
+        <code class="code">&lt;p title="John 'ShotGun' Nelson"&gt;</code>
+        <h5>Chapter Summary</h5>
+        <ul>
+          <li>All HTML elements can have attributes</li>
+          <li>The title attribute provides additional "tool-tip" information</li>
+          <li>The href attribute provides address information for links</li>
+          <li>The width and height attributes provide size information for images</li>
+          <li>The alt attribute provides text for screen readers</li>
+          <li>At W3Schools we always use lowercase attribute names</li>
+          <li>At W3Schools we always quote attribute values with double quotes</li>
+        </ul>
+      </article>
+  </section>
+  <hr>
+  <section class="main-section" id="Headings">
+    <header>Headings</header>
+      <article>
+        <p>Headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags.<br><br><code>&lt;h1&gt;</code> defines the most important heading. <code>&lt;h6&gt;</code> defines the least important heading.</p>
+        <h6>Example</h6>
+        <code class="code">&lt;h1&gt;Heading 1&lt;/h1&gt;<br>&lt;h2&gt;Heading 2&lt;/h2&gt;<br>&lt;h3&gt;Heading 3&lt;/h3&gt;<br>&lt;h4&gt;Heading 4&lt;/h4&gt;<br>&lt;h5&gt;Heading 5&lt;/h5&gt;<br>&lt;h6&gt;Heading 6&lt;/h6&gt;</code>
+        <h5>Headings Are Important</h5>
+        <p>Search engines use the headings to index the structure and content of your web pages.<br><br>Users skim your pages by its headings. It is important to use headings to show the document structure.<br><br><code>&lt;h1&gt;</code> headings should be used for main headings, followed by <code>&lt;h2&gt;</code> headings, then the less important <code>&lt;h3&gt;</code>, and so on.</p>
+        <h5>Bigger Headings</h5>
+        <p>Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property:</p>
+        <code class="code">&lt;h1 style="font-size:60px;"&gt;Heading 1&lt;/h1&gt;</code>
+        <h5>HTML Horizontal Rules</h5>
+        <p>The <code>&lt;hr&gt;</code> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.<br><br>The <code>&lt;hr&gt;</code> element is used to separate content (or define a change) in an HTML page:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;h1&gt;This is heading 1&lt;/h1&gt;<br>
+&lt;p&gt;This is some text.&lt;/p&gt;<br>&lt;hr&gt;<br>&lt;h2&gt;This is heading 2&lt;/h2&gt;<br>&lt;p&gt;This is some other text.&lt;/p&gt;<br>&lt;hr&gt;</code>
+        <h5>The HTML <code>&lt;head&gt;</code> Element</h5>
+        <p>The HTML <head> element has nothing to do with HTML headings.<br><br>The <code>&lt;head&gt;</code> element is a container for metadata. HTML metadata is data about the HTML document. Metadata is not displayed.<br><br>The <code>&lt;head&gt;</code> element is placed between the <code>&lt;html&gt;</code> tag and the <code>&lt;body&gt;</code> tag:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;My First HTML&lt;/title&gt;<br>&lt;meta charset="UTF-8"&gt;<br>&lt;/head&gt;<br>&lt;body&gt;</code>
+        <h5>How to View HTML Source?</h5>
+        <p>Have you ever seen a Web page and wondered "Hey! How did they do that?"</p>
+        <h5>View HTML Source Code:</h5>
+        <p>Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in IE), or similar in other browsers. This will open a window containing the HTML source code of the page.</p>
+        <h5>Inspect an HTML Element:</h5>
+        <p>Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
+      </article>
+  </section>
+  <hr>
+  <section class="main-section" id="Paragraphs">
+    <header>Paragraphs</header>
+      <article>
+        <p>The HTML <code>&lt;p&gt;</code> element defines a paragraph:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&lt;p&gt;This is another paragraph.&lt;/p&gt;</code>
+        <h6>HTML Display</h6>
+        <p>You cannot be sure how HTML will be displayed.
+
+Large or small screens, and resized windows will create different results.<br><br>With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code.<br><br>The browser will remove any extra spaces and extra lines when the page is displayed:</p>
+        <h6>Example</h6>
+        <code class="code">&lt;p&gt;<br>This paragraph<br>contains a lot of lines<br>in the source code,<br>but the browser<br>ignores it.
+<br>&lt;/p&gt;<br><br>&lt;p&gt;<br>This paragraph<br>contains         a lot of spaces<br>in the source         code,<br>but the        browser<br> ignores it.<br>&lt;/p&gt;</code>
+        <h5>Don't Forget the End Tag<h5>
+          <p>Most browsers will display HTML correctly even if you forget the end tag:</p>
+          <h6>Example</h6>
+          <code class="code">&lt;p&gt;This is a paragraph.
+&lt;p&gt;This is another paragraph.</code>
+          <p>The example above will work in most browsers, but do not rely on it.</p>
+          <h5>HTML Line Breaks</h5>
+          <p>The HTML <code>&lt;br&gt;</code> element defines a line break.<br><br>Use <code>&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph:</p>
+            <h6>Example</h6>
+            <code class="code">&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</code>
+            <p>The <code>&lt;br&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
+            <h5>The Poem Problem</h5>
+            <p>This poem will display on a single line:</p>
+            <h6>Example</h6>
+            <code class="code">&lt;p&gt;
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+&lt;/p&gt;</code>
+          <h5>The HTML <code>&lt;pre&gt;</code> Element</h5>
+          <p>The HTML <code>&lt;pre&gt;</code> element defines preformatted text.<br><br>The text inside a <code>&lt;pre&gt;</code> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
+          <h6>Example</h6>
+          <code class="code">&lt;pre&gt;
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+&lt;/pre&gt;</code>
+      </article>
+  </section>
+        <hr>
+  <section class="main-section" id="Info">
+    <header>Further Informtion</header>
+      <article>
+        <p>All information on this page was obtained from <a href="https://www.w3schools.com/default.asp">w3schools</a>.</p>
+        <a href="https://www.w3schools.com/default.asp"><img src="https://webbygram.com/wp-content/uploads/2017/05/W3schools-Logo.png"></a>
+        <p>click on the image to go directly to their site and learn tons more HTML!</p>
+      </article>
+  </section>
+</main>
+</body>
+</html>
